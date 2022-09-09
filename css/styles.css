@@ -6,6 +6,9 @@
   --primary-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
 }
+* {
+  outline: 1px solid tomato;
+}
 
 body {
   color: var(--primary-text-color);
@@ -15,12 +18,23 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -35,6 +49,14 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Logo */
@@ -53,6 +75,25 @@ body {
 }
 
 /* Navigation */
+
+.nav-container {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list .item:not {
+}
+
+.contact-list {
+  display: flex;
+}
 
 .nav-link {
   color: var(--primary-text-color);
