@@ -6,6 +6,7 @@
   --primary-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
 }
+
 * {
   outline: 1px solid tomato;
 }
@@ -76,26 +77,43 @@ h6 {
 
 /* Navigation */
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .nav-container {
   display: flex;
+  align-items: center;
 }
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
+  margin-left: 93px;
 }
 
-.nav-list .item:not {
+.nav-list .item + .item {
+  margin-left: 50px;
 }
 
 .contact-list {
   display: flex;
+  margin-left: auto;
+}
+
+.contact-list .item + .item {
+  margin-left: 50px;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -118,9 +136,18 @@ h6 {
 .hero-section {
   background-color: var(--primary-background-color);
   color: var(--primaty-white-color);
+
+  text-align: center;
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -130,8 +157,13 @@ h6 {
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+
   background-color: var(--accent-color);
   color: inherit;
+  border-radius: 4px;
+  border-color: transparent;
 
   font-weight: 700;
   font-size: 16px;
@@ -143,6 +175,15 @@ h6 {
 
 /* Section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
+
 .section-title {
   color: var(--primary-text-color);
 
@@ -153,6 +194,14 @@ h6 {
 
 /* Features */
 
+.features-container {
+  display: flex;
+}
+
+.features-container .item + .item {
+  margin-left: 30px;
+}
+
 .features-title {
   color: var(--primary-text-color);
 
@@ -162,13 +211,33 @@ h6 {
 }
 
 .features-text {
+  margin: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 14px;
   line-height: 1.7;
 }
 
+/* Work */
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item + .item {
+  margin-left: 30px;
+}
+
 /* Team */
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
 
 .team-name {
   color: var(--primary-text-color);
