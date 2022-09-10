@@ -185,6 +185,8 @@ h6 {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
 
   font-size: 36px;
@@ -225,21 +227,37 @@ h6 {
   display: flex;
 }
 
+.work-list .item {
+}
+
 .work-list .item + .item {
   margin-left: 30px;
+}
+
+.work-image {
+  display: block;
 }
 
 /* Team */
 
 .team-list {
   display: flex;
+
+  text-align: center;
 }
 
 .team-list .item + .item {
   margin-left: 30px;
 }
 
+.team-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -260,7 +278,15 @@ h6 {
   background-color: var(--primary-background-color);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--primaty-white-color);
 
   font-family: 'Raleway';
@@ -273,7 +299,13 @@ h6 {
   font-style: normal;
 }
 
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-link {
+  display: block;
+
   color: rgba(255, 255, 255, 0.6);
 
   font-weight: 400;
@@ -288,10 +320,26 @@ h6 {
 
 /* Portfolio */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list .item + .item {
+  margin-left: 8px;
+}
+
 .filter-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   background-color: var(--secondary-background-color);
   color: var(--primary-text-color);
 
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -305,7 +353,25 @@ h6 {
   color: var(--primaty-white-color);
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list .card {
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+
+  max-width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.portfolio-list .card:nth-child(3n) {
+  margin-right: 0;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -313,8 +379,15 @@ h6 {
 }
 
 .portfolio-text {
+  margin: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 16px;
   line-height: 1.9;
+}
+
+.portfolio-image {
+  display: block;
+  margin-bottom: 20px;
 }
