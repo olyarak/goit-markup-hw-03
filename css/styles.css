@@ -7,9 +7,9 @@
   --secondary-background-color: #f5f4fa;
 }
 
-/* * {
+* {
   outline: 1px solid tomato;
-} */
+}
 
 body {
   color: var(--primary-text-color);
@@ -198,7 +198,6 @@ h6 {
 
 .features-container {
   display: flex;
-  align-items: flex-start;
 }
 
 .features-container .item {
