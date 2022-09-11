@@ -109,6 +109,10 @@ h6 {
   margin-left: 50px;
 }
 
+.contact-list .link {
+  color: var(--secondary-text-color);
+}
+
 .nav-link {
   display: block;
   padding-top: 32px;
@@ -256,7 +260,8 @@ h6 {
 }
 
 .team-list .item {
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
+  background-color: var(--primaty-white-color);
 }
 
 .team-list .item + .item {
@@ -316,19 +321,26 @@ h6 {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address-link,
+.contact-link {
   display: block;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primaty-white-color);
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 
+.contact-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .address-link:hover,
-.address-link:focus {
-  color: var(--primaty-white-color);
+.address-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -373,6 +385,7 @@ h6 {
 
 .portfolio-list .card {
   max-width: calc((100% - 60px) / 3);
+  max-height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -390,11 +403,14 @@ h6 {
 
   color: var(--primary-text-color);
 
+  letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
 }
 
 .portfolio-text {
+  margin: 0;
+
   color: var(--secondary-text-color);
 
   font-size: 16px;
